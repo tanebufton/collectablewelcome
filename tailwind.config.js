@@ -4,9 +4,6 @@ module.exports = {
         ".\/**\/*.html"
     ],
     "darkMode": false,
-    "scripts": {
-      "build:css": "npx tailwindcss -c tailwind.config.js -i ./tailwind.css -o ./styles.css --watch"
-    },
     "theme": {
         "container": {
             "center": true,
@@ -46,18 +43,31 @@ module.exports = {
                     "900": "#890000",
                     "DEFAULT": "#ff1139"
                 },
+                "primary": {
+                    "50": "#ffffff",
+                    "100": "#ffffff",
+                    "200": "#ffffff",
+                    "300": "#ffffff",
+                    "400": "#ffffff",
+                    "500": "#ffffff",
+                    "600": "#e5e5e5",
+                    "700": "#cccccc",
+                    "800": "#b3b3b3",
+                    "900": "#9b9b9b",
+                    "DEFAULT": "#ffffff"
+                },
                 "primary-button-text": {
-                    "50": "#ff976d",
-                    "100": "#ff8a61",
-                    "200": "#ff6f4b",
-                    "300": "#ff5435",
-                    "400": "#fc361e",
-                    "500": "#de0404",
-                    "600": "#c00000",
-                    "700": "#a30000",
-                    "800": "#880000",
-                    "900": "#6e0000",
-                    "DEFAULT": "#de0404"
+                    "50": "#ffffff",
+                    "100": "#ffffff",
+                    "200": "#ffffff",
+                    "300": "#ffffff",
+                    "400": "#ffffff",
+                    "500": "#ffffff",
+                    "600": "#e5e5e5",
+                    "700": "#cccccc",
+                    "800": "#b3b3b3",
+                    "900": "#9b9b9b",
+                    "DEFAULT": "#ffffff"
                 },
                 "secondary": {
                     "50": "#ffffff",
@@ -73,17 +83,17 @@ module.exports = {
                     "DEFAULT": "#ffffff"
                 },
                 "secondary-button-text": {
-                    "50": "#ff996d",
-                    "100": "#ff8c62",
-                    "200": "#ff714b",
-                    "300": "#ff5534",
-                    "400": "#ff361e",
-                    "500": "#e40303",
-                    "600": "#c60000",
-                    "700": "#a90000",
-                    "800": "#8d0000",
-                    "900": "#730000",
-                    "DEFAULT": "#e40303"
+                    "50": "#ffa49d",
+                    "100": "#ff9792",
+                    "200": "#ff7b7a",
+                    "300": "#ff5e64",
+                    "400": "#ff3f4e",
+                    "500": "#ff1139",
+                    "600": "#e10025",
+                    "700": "#c30012",
+                    "800": "#a60000",
+                    "900": "#890000",
+                    "DEFAULT": "#ff1139"
                 },
                 "tertiary": {
                     "50": "#ffe487",
@@ -137,7 +147,7 @@ module.exports = {
                     "900": "#9b9b9b",
                     "DEFAULT": "#ffffff"
                 },
-                "6TckxhMUsvf1-link": {
+                "4rUSpi2i3cV6-link": {
                     "50": "#ffffff",
                     "100": "#ffffff",
                     "200": "#ffffff",
@@ -150,7 +160,7 @@ module.exports = {
                     "900": "#9b9b9b",
                     "DEFAULT": "#ffffff"
                 },
-                "6TckxhMUsvf1-link-hover": {
+                "4rUSpi2i3cV6-link-hover": {
                     "50": "#d0ffff",
                     "100": "#c3f3ff",
                     "200": "#a8daff",
@@ -163,7 +173,7 @@ module.exports = {
                     "900": "#003b83",
                     "DEFAULT": "#5691e6"
                 },
-                "6TckxhMUsvf1-mobile-link": {
+                "4rUSpi2i3cV6-mobile-link": {
                     "50": "#ffffff",
                     "100": "#ffffff",
                     "200": "#ffffff",
@@ -176,7 +186,7 @@ module.exports = {
                     "900": "#9b9b9b",
                     "DEFAULT": "#ffffff"
                 },
-                "6TckxhMUsvf1-mobile-link-hover": {
+                "4rUSpi2i3cV6-mobile-link-hover": {
                     "50": "#d0ffff",
                     "100": "#c3f3ff",
                     "200": "#a8daff",
@@ -188,14 +198,13 @@ module.exports = {
                     "800": "#004f9b",
                     "900": "#003b83",
                     "DEFAULT": "#5691e6"
-                },
-                "mnukfe88l7Vq-image-border": "#3F394B00"
+                }
             },
             "fontFamily": {
                 "header": "Poppins",
                 "title": "Poppins",
                 "body": "Roboto",
-                "6TckxhMUsvf1-link": "Poppins"
+                "4rUSpi2i3cV6-link": "Poppins"
             }
         }
     },
