@@ -18,67 +18,230 @@
     }
 }
 
-/* Background Colors */
+/* Ba*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-shadow: 0 0 #0000;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-shadow: 0 0 #0000;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+:host, html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  margin: 0;
+  line-height: inherit;
+}
+
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[hidden] {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .bg-background {
-    background-color: #ff1139;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 17, 57, var(--tw-bg-opacity, 1));
 }
 
-.bg-main {
-    background-color: #ff1139;
-}
-
-/* Text Colors */
-.text-primary {
-    color: #de0404;
-}
-
-.text-secondary-button-text {
-    color: #e40303;
-}
-
-.text-header {
-    color: #ffffff;
-}
-
-.text-body {
-    color: #ffffff;
-}
-
-/* Button Styles */
 .bg-secondary {
-    background-color: #ffffff;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-secondary-700:hover {
-    background-color: #cccccc;
-}
-
-.bg-secondary-button-text {
-    background-color: #e40303;
-}
-
-/* Font Families */
-.font-header {
-    font-family: 'Poppins', sans-serif;
+.text-center {
+  text-align: center;
 }
 
 .font-title {
-    font-family: 'Poppins', sans-serif;
+  font-family: Poppins;
 }
 
 .font-body {
-    font-family: 'Roboto', sans-serif;
+  font-family: Roboto;
 }
 
-/* Miscellaneous */
-.backdrop-blur-lg {
-    backdrop-filter: blur(16px);
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
-.overflow-x-hidden {
-    overflow-x: hidden;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-.overflow-hidden {
-    overflow: hidden;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.blur-3xl {
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
