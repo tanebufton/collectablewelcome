@@ -1,19 +1,84 @@
-/*! tailwindcss v3.x.x | MIT License | https://tailwindcss.com */
-*,::before,::after{box-sizing:border-box}html{line-height:1.5;-webkit-text-size-adjust:100%}
-/* Preflight (base styles) */
-body{margin:0;font-feature-settings:"liga" 1;font-family:Roboto,system-ui,-apple-system,"Segoe UI",sans-serif;background-color:#ffffff;color:#1f2937}
-/* Container (customized via your tailwind.config.js) */
-.container{width:100%;padding-right:1rem;padding-left:1rem;margin-right:auto;margin-left:auto}
-@media (min-width:640px){.container{padding-right:2rem;padding-left:2rem}}
-@media (min-width:1024px){.container{padding-right:4rem;padding-left:4rem}}
-@media (min-width:1280px){.container{padding-right:5rem;padding-left:5rem}}
-@media (min-width:1536px){.container{padding-right:6rem;padding-left:6rem}}
-/* Custom animation keyframes */
-@keyframes infinite-scroll{from{transform:translateX(0)}to{transform:translateX(-100%)}}
-/* Utility for custom animation */
-.animate-infinite-scroll{animation:infinite-scroll 25s linear infinite}
-/* Example utility classes detected in your HTML */
-.text-center{text-align:center}
-.mt-4{margin-top:1rem}
-.p-4{padding:1rem}
-/* ... many more generated utility classes ... */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations */
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@layer utilities {
+    .animate-infinite-scroll {
+        animation: infinite-scroll 25s linear infinite;
+    }
+}
+
+/* Background Colors */
+.bg-background {
+    background-color: #ff1139;
+}
+
+.bg-main {
+    background-color: #ff1139;
+}
+
+/* Text Colors */
+.text-primary {
+    color: #de0404;
+}
+
+.text-secondary-button-text {
+    color: #e40303;
+}
+
+.text-header {
+    color: #ffffff;
+}
+
+.text-body {
+    color: #ffffff;
+}
+
+/* Button Styles */
+.bg-secondary {
+    background-color: #ffffff;
+}
+
+.hover\:bg-secondary-700:hover {
+    background-color: #cccccc;
+}
+
+.bg-secondary-button-text {
+    background-color: #e40303;
+}
+
+/* Font Families */
+.font-header {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-title {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Miscellaneous */
+.backdrop-blur-lg {
+    backdrop-filter: blur(16px);
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
