@@ -4,6 +4,9 @@ module.exports = {
         ".\/**\/*.html"
     ],
     "darkMode": false,
+    "scripts": {
+      "build:css": "npx tailwindcss -c tailwind.config.js -i ./tailwind.css -o ./styles.css --watch"
+    },
     "theme": {
         "container": {
             "center": true,
